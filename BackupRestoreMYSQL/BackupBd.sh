@@ -1,9 +1,15 @@
-#SCRIPT QUE RESTAURA UNA BASE DE DATOS EN MYSQL
+#SCRIPT QUE RESPALDA UNA BASE DE DATOS EN MYSQL
 #!/bin/bash   
 
 
 dbUser=userMysql
 dbPass=PassMysql
+
+#Limpiar consola
+clear
+echo "INICIANDO EL PROCESO DE EXPORTACION..."
+echo "=========================================="
+
 
 args="-u"$ dbUser" -p "$dbPass" --add-drop-database --add-locks --create-options --complete-insert --comments --disable-keys --dump-date --extended-insert --quick --routines --triggers"                                                     
 
